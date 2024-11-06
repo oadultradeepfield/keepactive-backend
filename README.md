@@ -1,36 +1,36 @@
-# KeepActive Backend
+# 🌐 KeepActive Backend 🚀
 
 KeepActive is a service that helps keep free-tier hosted websites active by sending periodic GET requests. This prevents them from going dormant due to inactivity.
 
-## Features
+## ✨ Features
 
-- User authentication with JWT
-- Website monitoring management
-- Automated GET request scheduling
-- RESTful API design
-- Docker containerization
-- Production-ready configuration
+- 🔒 User authentication with JWT
+- 🌐 Website monitoring management
+- 🕹️ Automated GET request scheduling
+- 📡 RESTful API design
+- 🐳 Docker containerization
+- 🛠️ Production-ready configuration
 
-## Tech Stack
+## ⚙️ Tech Stack
 
-- Go 1.23
-- Gin Web Framework
-- GORM with PostgreSQL
-- JWT Authentication
-- Docker
-- Supabase (Database)
-- Render (Backend Deployment)
+![Go Badge](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go&logoColor=white)  
+![Gin Badge](https://img.shields.io/badge/Gin-Framework-3E921D?logo=go&logoColor=white)  
+![GORM Badge](https://img.shields.io/badge/GORM-PostgreSQL-4E5F55?logo=postgresql&logoColor=white)  
+![JWT Badge](https://img.shields.io/badge/JWT-Authentication-FFB700?logo=json-web-tokens&logoColor=white)  
+![Docker Badge](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)  
+![Supabase Badge](https://img.shields.io/badge/Supabase-Database-2F7B2B?logo=supabase&logoColor=white)  
+![Render Badge](https://img.shields.io/badge/Render-Deployment-10A0F0?logo=render&logoColor=white)
 
-## Local Development Setup
+## 🛠️ Local Development Setup
 
-### Prerequisites
+### 📝 Prerequisites
 
 - Go 1.23 or higher
 - Docker
 - PostgreSQL or Supabase account
 - Git
 
-### Installation
+### ⚡ Installation
 
 1. Clone the repository
 
@@ -61,7 +61,7 @@ PORT=8080
 go run main.go
 ```
 
-### Docker Local Development
+### 🐋 Docker Local Development
 
 1. Build the Docker image
 
@@ -75,9 +75,9 @@ docker build -t keepactive-backend .
 docker run -p 8080:8080 --env-file .env keepactive-backend
 ```
 
-## API Endpoints
+## 📡 API Endpoints
 
-### Authentication Endpoints
+### 🔐 Authentication Endpoints
 
 - `POST /api/register` - Register new user
 
@@ -96,7 +96,7 @@ docker run -p 8080:8080 --env-file .env keepactive-backend
   }
   ```
 
-### Website Management Endpoints
+### 🌐 Website Management Endpoints
 
 All these endpoints require JWT Authentication header: `Authorization: Bearer <token>`
 
@@ -114,15 +114,15 @@ All these endpoints require JWT Authentication header: `Authorization: Bearer <t
 
 - `DELETE /api/websites/:id` - Delete website
 
-## Deployment to Render
+## 🚀 Deployment to Render
 
-### Prerequisites
+### 📋 Prerequisites
 
 1. Create a [Render](https://render.com) account
 2. Create a [Supabase](https://supabase.com) account and database
 3. Have your code pushed to GitHub
 
-### Deployment Steps
+### ⚙️ Deployment Steps
 
 1. **Create New Web Service**
 
@@ -153,13 +153,13 @@ All these endpoints require JWT Authentication header: `Authorization: Bearer <t
    - Click "Create Web Service"
    - Render will automatically build and deploy your application
 
-### Checking Deployment
+### 🔍 Checking Deployment
 
 1. Your app will be available at `https://your-service-name.onrender.com`
 2. Test the health check endpoint: `https://your-service-name.onrender.com/health`
 3. Try registering a user using the `/api/register` endpoint
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 keepactive-backend/
