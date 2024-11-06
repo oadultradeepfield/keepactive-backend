@@ -18,7 +18,7 @@ func LoadConfig() *Config {
         Port:           getEnvOrDefault("PORT", "8080"),
         DatabaseURL:    os.Getenv("DATABASE_URL"),
         JWTSecret:     os.Getenv("JWT_SECRET"),
-        AllowedOrigins: strings.Split(getEnvOrDefault("ALLOWED_ORIGINS", "http://localhost:3000"), ","),
+        AllowedOrigins: strings.Split(os.Getenv("ALLOWED_ORIGINS"), ","),
         Environment:    getEnvOrDefault("GO_ENV", "development"),
     }
 }

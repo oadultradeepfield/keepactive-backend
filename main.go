@@ -12,19 +12,19 @@ import (
 )
 
 func main() {
-    // Load .env only in development
-    if gin.Mode() != gin.ReleaseMode {
-        if err := godotenv.Load(); err != nil {
-            log.Println("Warning: .env file not found")
-        }
-    }
-
     // Load configuration
     cfg := config.LoadConfig()
 
     // Set Gin mode
     if cfg.Environment == "production" {
         gin.SetMode(gin.ReleaseMode)
+    }
+
+    // Load .env only in development
+    if gin.Mode() != gin.ReleaseMode {
+        if err := godotenv.Load(); err != nil {
+            log.Println("Warning: .env file not found")
+        }
     }
 
     db := config.InitDB()
