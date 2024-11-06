@@ -13,13 +13,13 @@ KeepActive is a service that helps keep free-tier hosted websites active by send
 
 ## ⚙️ Tech Stack
 
-![Go Badge](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go&logoColor=white)  
-![Gin Badge](https://img.shields.io/badge/Gin-Framework-3E921D?logo=go&logoColor=white)  
-![GORM Badge](https://img.shields.io/badge/GORM-PostgreSQL-4E5F55?logo=postgresql&logoColor=white)  
-![JWT Badge](https://img.shields.io/badge/JWT-Authentication-FFB700?logo=json-web-tokens&logoColor=white)  
-![Docker Badge](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)  
-![Supabase Badge](https://img.shields.io/badge/Supabase-Database-2F7B2B?logo=supabase&logoColor=white)  
-![Render Badge](https://img.shields.io/badge/Render-Deployment-10A0F0?logo=render&logoColor=white)
+- ![Go Badge](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go&logoColor=white)
+- ![Gin Badge](https://img.shields.io/badge/Gin-Framework-3E921D?logo=go&logoColor=white)
+- ![GORM Badge](https://img.shields.io/badge/GORM-PostgreSQL-4E5F55?logo=postgresql&logoColor=white)
+- ![JWT Badge](https://img.shields.io/badge/JWT-Authentication-FFB700?logo=json-web-tokens&logoColor=white)
+- ![Docker Badge](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
+- ![Supabase Badge](https://img.shields.io/badge/Supabase-Database-2F7B2B?logo=supabase&logoColor=white)
+- ![Render Badge](https://img.shields.io/badge/Render-Deployment-10A0F0?logo=render&logoColor=white)
 
 ## 🛠️ Local Development Setup
 
