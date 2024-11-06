@@ -50,7 +50,7 @@ go mod tidy
 ```env
 DATABASE_URL=your_supabase_postgres_connection_string
 JWT_SECRET=your_secure_jwt_secret
-ALLOWED_ORIGINS=your_fronted_url
+ALLOWED_ORIGINS=https://your-frontend-domain.com
 GO_ENV=development
 PORT=8080
 ```
@@ -133,7 +133,7 @@ All these endpoints require JWT Authentication header: `Authorization: Bearer <t
 2. **Configure Web Service**
 
    - Name: `keepactive-backend` (or your preferred name)
-   - Region: Choose nearest to your target audience
+   - Region: Choose the nearest to your target audience
    - Runtime: Docker
    - Instance Type: Free
    - Health Check Path: `/health`
