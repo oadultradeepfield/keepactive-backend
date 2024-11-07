@@ -30,7 +30,13 @@ func (p *WebsitePinger) Start() {
 
         for _, website := range websites {
             timeSinceLastPing := time.Since(website.LastPinged)
-            randomInterval := time.Duration(rand.Intn(website.Duration-1)+1) * 24 * time.Hour
+
+            var randomInterval time.Duration
+            if website.Duration > 1 {
+                randomInterval = time.Duration(rand.Intn(website.Duration-1)+1) * 24 * time.Hour
+            } else {
+                randomInterval = 24 * time.Hour
+            }
 
             if timeSinceLastPing >= randomInterval {
                 resp, err := p.client.Get(website.URL)
